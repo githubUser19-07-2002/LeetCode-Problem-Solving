@@ -1,0 +1,6 @@
+//To do
+
+Create a pipeline
+Use github actions
+Web hooks
+Linting
