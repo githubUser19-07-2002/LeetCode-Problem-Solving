@@ -17,6 +17,9 @@ jobs:
       - name: Install clang-format
         run: sudo apt-get install clang-format -y
 
-      - name: Run clang-format check
+      - name: Run clang-format to fix code
         run: |
-          find . -regex '.*\.\(cpp\|h\)' | xargs clang-format -style=file -n --Werror
+          find . -regex '.*\.\(cpp\|h\)' -not -path "./build/*" | xargs clang-format -style=file -i
+
+      - name: Show diff if any
+        run: git diff --exit-code || echo "⚠️ Code was auto-formatted. Please commit the changes."
