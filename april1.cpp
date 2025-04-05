@@ -19,7 +19,8 @@ public:
         }
         long long op1 = questions[i][0] + rep(i+questions[i][1]+1,dp,n,questions);
         long long op2 = rep(i+1,dp,n,questions);
-        return dp[i] = max(op1,op2);
+
+        return dp[i] = max(op1, op2);
     }
     long long mostPoints(vector<vector<int>>& questions) {
         int n = questions.size();
