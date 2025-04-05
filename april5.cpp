@@ -16,5 +16,5 @@ public:
            ans += xor_value;
         }
         return ans;
-        }
+    }
 };
