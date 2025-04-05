@@ -1,0 +1,22 @@
+name: C++ Lint
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install clang-format
+        run: sudo apt-get install clang-format -y
+
+      - name: Run clang-format check
+        run: |
+          find . -regex '.*\.\(cpp\|h\)' | xargs clang-format -style=file -n --Werror
