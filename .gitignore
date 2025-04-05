@@ -1,0 +1,18 @@
+# VS Code
+.vscode/
+
+# Build files
+build/
+*.o
+*.out
+*.exe
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
