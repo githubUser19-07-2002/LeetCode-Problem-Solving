@@ -14,6 +14,7 @@ public:
         for (int i = 0; i < n - 1; ++i) {
             pairWeights[i] += weights[i] + weights[i + 1];
         }
+        
 
         sort(pairWeights.begin(), pairWeights.end());
         long long answer = 0;
