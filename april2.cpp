@@ -18,6 +18,7 @@ public:
                 ans = max(ans,(nums[i]-nums[j])*maxArr[j+1]);
             }
         }
+
         return ans;
     }
 };

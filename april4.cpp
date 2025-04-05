@@ -50,5 +50,5 @@ public:
         int count = countOfNodes(root,1,depth);
         getLca(root,1,depth,count);
         return ans;
-    }
+        }
 };

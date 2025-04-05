@@ -21,6 +21,7 @@ public:
         for(int i=1;i<n;i++){
             ans = max(ans,(prefix[i-1]-nums[i])*suffix[i+1]);
         }
+
         return ans;
     }
 };
