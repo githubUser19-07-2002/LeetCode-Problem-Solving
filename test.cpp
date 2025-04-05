@@ -13,6 +13,7 @@ public:
                     xor_value = nums[j]^xor_value;
                 }
             }
+
            ans += xor_value;
         }
 

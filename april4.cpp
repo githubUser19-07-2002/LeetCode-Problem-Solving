@@ -37,6 +37,7 @@ public:
         int current = (depth == maxDepth);
         int countLeft = getLca(root->left,depth+1,maxDepth,count);
         int countRight = getLca(root->right,depth+1,maxDepth,count);
+
         if(current+countLeft+countRight == count && ans == NULL){
             ans = root;
         }

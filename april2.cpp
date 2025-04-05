@@ -13,6 +13,7 @@ public:
             maxArr[i] = max(maxArr[i+1],(long long)nums[i]);
         }
         long long ans = 0;
+
         for(int i=0;i<n;i++){
             for(int j=i+1;j<n-1;j++){
                 ans = max(ans,(nums[i]-nums[j])*maxArr[j+1]);
