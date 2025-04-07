@@ -1,3 +1,6 @@
+//Problem Link
+// https://leetcode.com/problems/partition-equal-subset-sum/description/?envType=daily-question&envId=2025-04-07
+
 class Solution {
 public:
     int checkForSubset(vector<int>& nums,int sum,vector<vector<int>>& dp,int n,int i){
